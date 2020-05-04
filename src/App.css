@@ -1,38 +1,121 @@
 .App {
-  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #f4f5f5;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  /* width: 1122px; */
+  margin: 0 auto;
+  height: 59px;
+  border-bottom: 1px solid rgb(233, 232, 232);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  width: 1122px;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo img {
+  width: 132px;
+}
+.subHeader {
+  background-color: white;
+  margin: 0 auto;
+  padding: 30px;
+}
+.presentation {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  width: 1120px;
+  margin: 0 auto;
+}
+.presentation h2 {
+  font-family: stratos, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2e3333;
+}
+.presentation p {
+  font-family: "IBM Plex Sans";
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 19px;
+  color: #828585;
+}
+.presentation img {
+  height: 160px;
+  width: 350px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+.categories {
+  margin: 0 auto;
+  width: 1122px;
+  color: #2e3333;
+}
+.detailCat {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  height: 155px;
+  border-radius: 5px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.detailCat:hover {
+  box-shadow: 5px 5px 10px 10px rgba(220, 222, 222, 0.5);
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.detailCat img {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
 }
+.detailCat h4 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #2e3333;
+  margin-bottom: 10px;
+}
+.detailCat p {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #828585;
+  margin-bottom: 10px;
+}
+.detailCat div > div {
+  margin-top: 30px;
+}
+.popular {
+  color: #ff8921;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 30px;
+}
+.displayNone {
+  display: none;
+}
+.catMeals {
+  margin-top: 20px;
+}
+.catMeals h3 {
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 700;
+  font-family: stratos, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.mealCategory {
+  width: 750px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
